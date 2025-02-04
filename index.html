@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigDataShiftPlanner2025</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="./js/script.js"></script>
+</head>
+<body>
+    <h1>BigData ShiftPlanner 2025</h1>
+    
+    <label for="shiftMonth">シフト作成月を選択:</label>
+    <input type="month" id="shiftMonth">
+    
+    <h2>チーム人数設定</h2>
+    <table>
+        <tr>
+            <th>チーム</th>
+            <th>人数</th>
+        </tr>
+        <tr>
+            <td>Integration</td>
+            <td><input type="number" id="integration" value="6"></td>
+        </tr>
+        <tr>
+            <td>HDI/Spark</td>
+            <td><input type="number" id="hdi-spark" value="3"></td>
+        </tr>
+        <tr>
+            <td>Synapse</td>
+            <td><input type="number" id="synapse" value="2"></td>
+        </tr>
+    </table>
+
+    <button id="generateShift">シフト作成</button>
+
+    <h2>基本情報</h2>
+    <div id="monthInfo"></div>
+
+    <h2>担当日数</h2>
+    <div id="teamAssignment"></div>
+
+    <h2>シフト表</h2>
+    <table id="shiftTable">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Day</th>
+                <th>LateShift</th>
+                <th>Integration</th>
+                <th>HDI/Spark</th>
+                <th>Synapse</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+</body>
+</html>
