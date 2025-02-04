@@ -25,17 +25,6 @@
 
 ---
 
-## ファイル構成
-BigDataShiftPlanner2025/
-├── index.html # アプリのメインHTMLファイル（基本レイアウト） 
-├── css/ 
-│ └── style.css # スタイリング用のCSSファイル 
-└── js/ 
-  └── script.js # シフト生成やイベント処理を実装したJavaScriptファイル
-
-
----
-
 ## 使い方
 
 1. **アクセス**  
